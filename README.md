@@ -1,88 +1,65 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13136296&assignment_repo_type=AssignmentRepo)
-# Expense Tracker Application
+
+# Stock Market Price Predictor
 
 ## 1. Overview
 
-The Expense Tracker App is a mobile application designed to help users manage their expenses, track spending across different categories, and maintain a record of financial transactions. It provides an intuitive interface for creating and managing groups, decks, and flashcards, allowing users to organize their expenses efficiently. The expense tracker application which also has a currency converter feature where we can get the live rate of any currency, we can make groups of specific categories or trips where we can add the expense incurred in these groups. It saves the data using a sqflite database model, where all the data gets stored locally. We can also add friends in the friends tab, and it displays the amount owed to a friend. The live rates of the currency gets fetched from a API from the web. If you have any questions please feel free to reach me out via mail at soham.sonar427@gmail.com or on linked at https://www.linkedin.com/in/sohamsonar23/, Thank You!
+This repository contains a Python implementation of a stock market price predictor using LSTM (Long Short-Term Memory) neural networks. The predictor is designed to forecast stock prices based on historical data. The LSTM model is built using TensorFlow and Keras, and the stock price data is fetched using the Yahoo Finance API. If you have any questions please feel free to reach me out via mail at soham.sonar427@gmail.com or on linked at https://www.linkedin.com/in/sohamsonar23/, Thank You!
 
 
-## 2. Features:
+## 2. Requirements:
 
-# Group Management:
+- Python 3.6 or higher
+- Required Python packages can be installed using the following command:
 
-Create, edit, and delete groups for organizing expenses.
-View the total expense for each group.
+``` pip install numpy matplotlib pandas pandas_datareader scikit-learn tensorflow yfinance ```
 
-# Deck Management:
+## 3. Usage
 
-Add, edit, and delete decks within a group.
-Track the total expense for each deck.
-
-# Flashcard Management:
-
-Record individual expenses using flashcards.
-Assign expenses to specific friends or participants.
-View and edit details of each flashcard.
-
-# Friend Management:
-
-Add, edit, and delete friends.
-View the total amount owed or owed by each friend.
-Track expenses with friends.
-
-My application has the following high-level features:
-
-1. There are at least 3 separate screens/pages in my application, each of which implemented as a separate widget. One of these pages is set to be the default "home" page that is displayed when the application is first launched. Navigation between pages are implemented using the standard Flutter mechanisms (e.g., `Navigator`, `TabBar`, `BottomNavigationBar`, etc.).
-2. All of the pages in my application are backed by a stateful widget, which in turn is backed by a custom model class. This model class encapsulates the data that is displayed/manipulated on the page. I have choose these mechanisms (e.g., `setState`, `ChangeNotifier`, `Provider`, etc.) to update the UI on model object updates.
-3. My app persists some user-updateable data across application launches in some way. Where I have used sqflite as a mechanism to do so, which stores all of the data in file locally.
-4. My app also access some data from an external source (e.g., a RESTful API) and displays it in the app.
+### 1. Clone the repository:
 
 
-### 3 External packages
-
-I have included the following packages in the `pubspec.yaml` file:
-
-- [`collection`](https://pub.dev/packages/collection): a library that provides a set of additional data structures and utilities
-- [`flutter_test`](https://pub.dev/packages/flutter_test): a library that provides a set of utilities for writing widget tests
-- [`http`](https://pub.dev/packages/http): a library that provides a set of high-level asynchronous functions for communicating with HTTP servers
-- [`mockito`](https://pub.dev/packages/mockito): a library that provides a set of utilities for mocking classes and objects
-- [`path`](https://pub.dev/packages/path): a library that provides a set of utilities for manipulating paths
-- [`path_provider`](https://pub.dev/packages/path_provider): a library that provides a set of utilities for locating files/directories on the filesystem
-- [`provider`](https://pub.dev/packages/provider): a library that provides a set of utilities for managing and disseminating stateful data
-- [`shared_preferences`](https://pub.dev/packages/shared_preferences): a library that provides a persistent store for simple data
-- [`sqflite`](https://pub.dev/packages/sqflite): a library that wraps SQLite functionality for use in Flutter applications
-- [`test`](https://pub.dev/packages/test): a library that provides a set of utilities for writing unit tests
-
-* Getting Started
-# Prerequisites
-1. Flutter SDK
-2. Dart SDK
-3. SQLite
-
-# Installation
-1. Clone the repository.
+### 2. Install the required packages:
 
 
-- git clone https://github.com/your-username/expense-tracker-app.git
+### 3. Run the predictor script:
+``` python stock_price_predictor.py ```
 
-2. Navigate to the project directory.
+The script downloads historical stock price data, preprocesses it using Min-Max scaling, trains an LSTM model, and visualizes the predicted vs. actual prices.
 
--cd expense-tracker-app
+## Configuration
+1. The company variable in the script is set to 'AAPL' by default. You can change it to the desired stock symbol.
+2. Adjust the start and end variables to set the training data timeframe.
+3. Fine-tune the LSTM model architecture and training parameters as needed.
 
-3. Install dependencies.
+## Technical Details
+1. Data Preprocessing:
+-   The historical stock prices are fetched using the Yahoo Finance API (yfinance).
+-   Min-Max scaling is applied to normalize the closing prices between 0 and 1.
 
-- flutter pub get
+2. LSTM Architecture:
+-   The model consists of three LSTM layers with 50 units each, followed by dropout layers to prevent overfitting.
+-   The final layer is a Dense layer with a single unit, predicting the next day's stock price.
 
-# Usage
-Run the application.
+3. Training:
+-   The model is compiled with the Adam optimizer and mean squared error loss function.
+-   Training is performed for 25 epochs with a batch size of 32.
 
-1. flutter run
-2. Explore different features within the app, create groups, decks, and flashcards, and track your expenses.
+4. Testing:
+-   Test data is fetched from the specified start date to the current date.
+-   Actual and predicted stock prices are visualized using Matplotlib.
 
-## Technologies Used
-* Flutter
-* Dart
-* SQLite
+## Example Output
+-   The script generates a plot displaying actual and predicted stock prices.
 
-# Contributing
-If you'd like to contribute to this project, please follow the Contributing Guidelines.
+## Acknowledgements:
+-   The code is inspired by various LSTM-based stock price prediction implementations.
+
+## Research Paper:
+1. ESTIMATING STOCK PRICES USING LSTM:
+-   Published a research paper in Dickensian Journal Volume 22, ISSUE 6, 2022 ISSN: 0012-2440.
+2. FORECASTING EQUITY PRICES USING LSTM ALGORITH:
+-   Published in IJCRT Journal VOLUME 9, ISSUE 12 December 2021 ISSN: 
+2320-2882.
+
+## Disclaimer:
+-   This project is for educational and informational purposes only. It should not be considered financial advice.
