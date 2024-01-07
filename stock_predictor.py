@@ -9,10 +9,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, LSTM
 import yfinance as yf
 
-
-
-
-company = 'MSFT'
+company = 'AAPL'
 
 start = dt.datetime(2015, 1, 1)
 end = dt.datetime(2022, 1, 1)
