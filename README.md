@@ -46,7 +46,12 @@ The script downloads historical stock price data, preprocesses it using Min-Max 
 -   Test data is fetched from the specified start date to the current date.
 -   Actual and predicted stock prices are visualized using Matplotlib.
 
-## Example Output
+## ScreenShot:
+![](https://github.com/sohamsonar427/Stock-Market-Price-Predictor/blob/main/Screenshots/SS.jpg)
+
+![](https://github.com/sohamsonar427/Stock-Market-Price-Predictor/blob/main/Screenshots/SS1.jpg)
+
+## Example Output:
 -   The script generates a plot displaying actual and predicted stock prices.
 
 ## Acknowledgements:
