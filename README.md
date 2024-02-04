@@ -18,7 +18,7 @@ This repository contains a Python implementation of a stock market price predict
 
 ### 1. Clone the repository:
     ```bash
-    https://github.com/sohamvsonar/Stock-Market-Price-Predictor.git
+    git clone https://github.com/sohamvsonar/Stock-Market-Price-Predictor.git
 ### 2. Install the required packages
 
 ### 3. Run the predictor script:
