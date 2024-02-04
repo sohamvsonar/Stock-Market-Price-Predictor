@@ -11,8 +11,8 @@ This repository contains a Python implementation of a stock market price predict
 - Python 3.6 or higher
 - Required Python packages can be installed using the following command:
 
-  bash
-  ``` pip install numpy matplotlib pandas pandas_datareader scikit-learn tensorflow yfinance
+  ```bash
+  pip install numpy matplotlib pandas pandas_datareader scikit-learn tensorflow yfinance
 
 ## 3. Usage
 
