@@ -11,16 +11,19 @@ This repository contains a Python implementation of a stock market price predict
 - Python 3.6 or higher
 - Required Python packages can be installed using the following command:
 
-``` pip install numpy matplotlib pandas pandas_datareader scikit-learn tensorflow yfinance ```
+  bash
+  ``` pip install numpy matplotlib pandas pandas_datareader scikit-learn tensorflow yfinance
 
 ## 3. Usage
 
 ### 1. Clone the repository:
-``` https://github.com/sohamvsonar/Stock-Market-Price-Predictor.git ```
+    ```bash
+    https://github.com/sohamvsonar/Stock-Market-Price-Predictor.git
 ### 2. Install the required packages
 
 ### 3. Run the predictor script:
-``` python Stock-Market-Price-Predictor.py ```
+    ```bash
+    python Stock-Market-Price-Predictor.py
 
 The script downloads historical stock price data, preprocesses it using Min-Max scaling, trains an LSTM model, and visualizes the predicted vs. actual prices.
 
