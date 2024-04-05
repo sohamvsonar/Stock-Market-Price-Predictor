@@ -64,8 +64,7 @@ The script downloads historical stock price data, preprocesses it using Min-Max 
 1. ESTIMATING STOCK PRICES USING LSTM:
 -   Published a research paper in Dickensian Journal Volume 22, ISSUE 6, 2022 ISSN: 0012-2440.
 2. FORECASTING EQUITY PRICES USING LSTM ALGORITH:
--   Published in IJCRT Journal VOLUME 9, ISSUE 12 December 2021 ISSN: 
-2320-2882.
+-   Published in IJCRT Journal VOLUME 9, ISSUE 12 December 2021 ISSN: 2320-2882.
 
 ## Disclaimer:
 -   This project is for educational and informational purposes only. It should not be considered financial advice.
