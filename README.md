@@ -8,7 +8,7 @@ This repository contains a Python implementation of a stock market price predict
 
 ## 2. Requirements:
 
-- Python 3.6 or higher
+- Python 3.6 or higher.
 - Required Python packages can be installed using the following command:
 
   ```bash
