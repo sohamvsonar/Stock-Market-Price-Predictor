@@ -3,7 +3,7 @@
 
 ## 1. Overview
 
-This repository contains a Python implementation of a stock market price predictor using LSTM (Long Short-Term Memory) neural networks. The predictor is designed to forecast stock prices based on historical data. The LSTM model is built using TensorFlow and Keras, and the stock price data is fetched using the Yahoo Finance API. If you have any questions please feel free to reach me out via mail at soham.sonar427@gmail.com or on linked at https://www.linkedin.com/in/sohamsonar23/, Thank You!
+This repository contains a Python implementation of a stock market price predictor usin LSTM (Long Short-Term Memory) neural networks. The predictor is designed to forecast stock prices based on historical data. The LSTM model is built using TensorFlow and Keras, and the stock price data is fetched using the Yahoo Finance API. If you have any questions please feel free to reach me out via mail at soham.sonar427@gmail.com or on linked at https://www.linkedin.com/in/sohamsonar23/, Thank You!
 
 
 ## 2. Requirements:
